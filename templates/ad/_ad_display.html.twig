@@ -1,0 +1,33 @@
+ <div class="col-md-4">
+    <div class="card">
+        <div class="card-header text-center">
+            <h4> {{ ad.rooms}} chambres <strong>{{ ad.price }}&dollar; / nuit</strong></h4>
+            <small>pas encore noté</small>
+        </div>
+        <a class="link" href="{{ path('item_show', {'slug': ad.slug} )}}">
+            <img src="{{ ad.imgUrl}}" class="card-image" style="width:100%; height:200px; display:block">
+        <a>
+        
+        <div class="card-body">
+            <a class="link" href="{{ path('item_show', {'slug': ad.slug} )}}">
+                <h3 class="card-title"> {{ ad.title }} </h3> 
+            <a>
+            <div class="card-text">
+            {{ ad.introduction}}
+            </div>
+            <div class="text-center pt-3">
+                    <a class="btn btn-primary" href="{{ path('item_show', {'slug': ad.slug} )}}">En savoir plus</a>    
+                    {% if app.user and app.user == ad.user %}
+                    
+                        <a href="{{ path("edit_ad",{'slug': ad.slug}) }}" class="btn btn-warning">modifier</a>
+                        <a href="{{ path("del_ad",{'slug': ad.slug}) }}" 
+                            class="btn btn-danger delAds";
+                            data-target="{{ ad.title }}"
+                        >Supprimer</a>
+                    
+                    {% endif %}
+            </div>
+        </div>
+        <a>
+    </div>
+</div>

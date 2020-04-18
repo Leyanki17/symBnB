@@ -1,0 +1,18 @@
+{% extends 'base.html.twig'%}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+
+    <div class="container mt-3">
+            <h3 class="my-2">Inscription sur SymBnB </h3>
+            {{ form_start(form) }}
+
+            {{ form_widget(form)}}
+
+            <button class="btn btn-primary" type="submit">S'inscrire</button>
+
+        {{ form_end(form)}}
+    </div>
+
+{% endblock %}

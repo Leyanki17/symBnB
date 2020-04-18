@@ -1,0 +1,29 @@
+.ad-title h1 ,.ad-title p{
+    color: white !important;
+    text-shadow : rgba(0, 0, 0, .5);
+}
+.ad-title{
+    padding: 2rem 0rem;
+}
+
+.avatar-img{
+    height: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+.avatar-img-medium{
+    height: 70px;
+    height: 70px;
+}
+
+.avatar-img-mini{
+    height: 45px;
+    height: 45px;
+}
+.ad-user .info{
+    padding-bottom: 1rem;
+}
+.link{
+    text-decoration:none;
+    color:black;
+}   
